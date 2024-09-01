@@ -25,7 +25,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    box-shadow:0 0 50px 30px #ffffff inset;
+    box-shadow:0 0 50px 30px #000000 inset;
 }
 
 .moods div:nth-of-type(1){

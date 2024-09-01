@@ -1,0 +1,181 @@
+.examMain {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 10% 0;
+  margin-top: 5%;
+  animation:slideIn 0.6s ease forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+
+.ItemPack ul li {
+  list-style: none;
+  display: inline;
+}
+
+#selectItem {
+  width: 25%;
+  height: 100%;
+  border-radius: 2%;
+  box-shadow: 4px 0 2px #eff1f0;
+  background: rgba(200, 200, 200, 0.8);
+}
+
+.ItemPack {
+  margin: 10%;
+}
+
+.PackTitle {
+  font-size: 20px;
+  font-weight: 2000;
+  margin-bottom: 10px;
+}
+
+.noAnswer {
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid #b7b2a9;
+  color: black;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.Answered {
+  font-size: 20px;
+  background-color: #76bcd8;
+  border: 2px solid #b7b2a9;
+  color: black;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.nowAnswer {
+  font-size: 20px;
+  background-color: #739cf0;
+  border: 2px solid black;
+  color: black;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  box-shadow: 0px 0px 5px #b7b2a9;
+}
+
+.markAnswer {
+  border: 2px solid #ffad00;
+}
+
+#showItem {
+  width: 75%;
+  height: 100%;
+  border-radius: 1%;
+  background-color: rgba(200, 200, 200, 0.6);
+}
+
+#showItem ul li {
+  list-style: none;
+}
+
+#info {
+  margin: 5%;
+  height: 70%;
+}
+#description {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#options {
+  margin-top: 20px;
+}
+
+.oneSingleOption {
+  margin: 10px;
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid #b7b2a9;
+  color: black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.chooseOneSingleOption {
+  margin: 10px;
+  font-size: 20px;
+  background-color: #76bcd8;
+  border: 2px solid #b7b2a9;
+  color: black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.oneOption {
+  margin: 10px;
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid #b7b2a9;
+  color: black;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.chooseOneOption {
+  margin: 10px;
+  font-size: 20px;
+  background-color: #76bcd8;
+  border: 2px solid #b7b2a9;
+  color: black;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+#ctrlBtn {
+  float: right;
+}
+
+#ctrlBtn button {
+  width: 80px;
+  height: 36px;
+  border: none;
+  border-radius: 5%;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  margin: 30px;
+}
+
+.optionInfo {
+  display: inline;
+  font-size: 20px;
+}
+
+.examMain button:hover{
+  cursor: pointer;
+  box-shadow: 0 0 10px white;
+}
+
+.examMain button:active{
+  filter: brightness(0.7);
+}
+
+
+@keyframes slideIn {
+    0%{
+      transform: translateY(100px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+}

@@ -1,6 +1,6 @@
 
 
-.sports{
+.movies{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -8,43 +8,44 @@
     justify-content: space-between;
     align-items: center;
     padding: 70px 10% 0;
+    color:white;
 }
 
-.sports div{
+.movies div{
     width: 350px;
     max-width: 350px;
     opacity: 0;
-    animation: sportSlide 1s ease forwards;
+    animation: movieSlide 1s ease forwards;
     animation-delay: calc(0.3s*var(--id));
 }
 
-.sports div:nth-of-type(2){
+.movies div:nth-of-type(2){
     width: 350px;
     max-width: 350px;
     opacity: 0;
-    animation: sportSlide2 1s ease forwards;
+    animation: movieSlide2 1s ease forwards;
     animation-delay: calc(0.5s*var(--id));
 }
 
-.sports-sport h1{
+.movies-movie h1{
     font-size: 30px;
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.sports-sport h3{
+.movies-movie h3{
     font-size: 20px;
     font-weight: 300;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.sports-img img{
+.movies-img img{
     max-width: 350px;
 }
 
-.sports-img a{
+.movies-img a{
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -58,12 +59,12 @@
     transition-timing-function: ease-out;
 }
 
-.sports-img a:hover{
+.movies-img a:hover{
     box-shadow: 0 0 20px #b7b2a9;
     transform: translateY(-8px);
 }
 
-@keyframes sportSlide{
+@keyframes movieSlide{
     0%{
         transform: translateY(100px);
     }
@@ -73,12 +74,12 @@
     }
 }
 
-@keyframes sportSlide2{
+@keyframes movieSlide2{
     0%{
         transform: translateY(100px);
     }
     100%{
-        transform: translateY(0px);
+        transform: translateY(-100px);
         opacity: 1;
     }
 }
