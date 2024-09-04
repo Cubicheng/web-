@@ -9,115 +9,100 @@
   </head>
   <body>
     <div class="examMain">
-      <div id="selectItem">
-        <div class="ItemPack">
-          <h1 class="PackTitle">-Single Choise</h1>
-          <ul>
-            <li>
-              <button id="1" onclick="setNowIndex(1)">
-                1
-              </button>
-            </li>
-            <li>
-              <button id="2" onclick="setNowIndex(2)">
-                2
-              </button>
-            </li>
-            <li>
-              <button id="3" onclick="setNowIndex(3)">
-                3
-              </button>
-            </li>
-            <li>
-              <button id="4" onclick="setNowIndex(4)">
-                4
-              </button>
-            </li>
-          </ul>
+        <div id="selectItem">
+          <div class="ItemPack">
+            <h1 class="PackTitle">-Single Choise</h1>
+            <ul>
+              <li>
+                <button id="1" onclick="setNowIndex(1)">1</button>
+              </li>
+              <li>
+                <button id="2" onclick="setNowIndex(2)">2</button>
+              </li>
+              <li>
+                <button id="3" onclick="setNowIndex(3)">3</button>
+              </li>
+              <li>
+                <button id="4" onclick="setNowIndex(4)">4</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ItemPack">
+            <h1 class="PackTitle">-Mutiple Choise</h1>
+            <ul>
+              <li>
+                <button id="5" onclick="setNowIndex(5)">5</button>
+              </li>
+              <li>
+                <button id="6" onclick="setNowIndex(6)">6</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ItemPack">
+            <h1 class="PackTitle">-Judgement</h1>
+            <ul>
+              <li>
+                <button id="7" onclick="setNowIndex(7)">7</button>
+              </li>
+              <li>
+                <button id="8" onclick="setNowIndex(8)">8</button>
+              </li>
+              <li>
+                <button id="9" onclick="setNowIndex(9)">9</button>
+              </li>
+              <li>
+                <button id="10" onclick="setNowIndex(10)">10</button>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="ItemPack">
-          <h1 class="PackTitle">-Mutiple Choise</h1>
-          <ul>
-            <li>
-              <button id="5" onclick="setNowIndex(5)">
-                5
-              </button>
-            </li>
-            <li>
-              <button id="6" onclick="setNowIndex(6)">
-                6
-              </button>
-            </li>
-          </ul>
-        </div>
-
-        <div class="ItemPack">
-          <h1 class="PackTitle">-Judgement</h1>
-          <ul>
-            <li>
-              <button id="7"onclick="setNowIndex(7)">
-                7
-              </button>
-            </li>
-            <li>
-              <button id="8" onclick="setNowIndex(8)">
-                8
-              </button>
-            </li>
-            <li>
-              <button id="9" onclick="setNowIndex(9)">
-                9
-              </button>
-            </li>
-            <li>
-              <button id="10" onclick="setNowIndex(10)">
-                10
-              </button>
-            </li>
-          </ul>
-        </div>
+        <div id="showItem">
+          <div id="timer">
+            <p>03:00</p>
+          </div>
+          <div id="info">
+            <h1 id="index">1</h1>
+            <h2 id="description">what is love</h2>
+            <ul id="options">
+              <li>
+                <button class="oneSingleOption">A</button>
+                <p class="optionInfo">1111</p>
+              </li>
+              <li>
+                <button class="oneSingleOption">B</button>
+                <p class="optionInfo">1111</p>
+              </li>
+              <li>
+                <button class="oneSingleOption">C</button>
+                <p class="optionInfo">1111</p>
+              </li>
+              <li>
+                <button class="oneSingleOption">D</button>
+                <p class="optionInfo">1111</p>
+              </li>
+            </ul>
+          </div>
+        <form action="../../LeaderBoard.asp" method="post">
+            <input type="text" name="score" id="score" hidden/>
+            <div id="ctrlBtn">
+              <button id="prevItem" type="button" onclick="previous()">previous</button>
+              <button id="nextItem" type="button" onclick="next()">next</button>
+              <button id="markItem" type="button" onclick="mark()">mark</button>
+              <button id="markItem" type="button" onclick="unmark()">unmark</button>
+              <button id="submit" type="submit">submit</button>
+            </div>
+          </div>
+        </form>
       </div>
-
-      <div id="showItem">
-        <div id="info">
-          <h1 id="index">1</h1>
-          <h2 id="description">what is love</h2>
-          <ul id="options">
-            <li>
-              <button class="oneSingleOption">A</button>
-              <p class="optionInfo">1111</p>
-            </li>
-            <li>
-              <button class="oneSingleOption">B</button>
-              <p class="optionInfo">1111</p>
-            </li>
-            <li>
-              <button class="oneSingleOption">C</button>
-              <p class="optionInfo">1111</p>
-            </li>
-            <li>
-              <button class="oneSingleOption">D</button>
-              <p class="optionInfo">1111</p>
-            </li>
-          </ul>
-        </div>
-        <div id="ctrlBtn">
-          <button id="prevItem" onclick="previous()">previous</button>
-          <button id="nextItem" onclick="next()">next</button>
-          <button id="markItem" onclick="mark()">mark</button>
-          <button id="markItem" onclick="unmark()">unmark</button>
-          <button id="submit">submit</button>
-        </div>
-      </div>
-    </div>
-
+      
     <header class="header">
-      <a href="../main/MainPage.html" class="logo">Cubicheng.</a>
+      <a href="../../MainPage.html" class="logo">Cubicheng.</a>
       <nav class="navbar">
         <a href="#" class="active_item" style="--id: 1">Exam</a>
-        <a href="#" class="item" style="--id: 2">History</a>
-        <a href="#" class="item" style="--id: 3">Leaderboard</a>
+        <a href="#" class="item" style="--id: 2">Leaderboard</a>
       </nav>
     </header>
   </body>

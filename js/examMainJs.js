@@ -36,7 +36,7 @@ var item = [
     type: 'single',
     description: "Which song is named after DT'girlfriend?",
     option: ['Melody', 'Susan Said', 'Catherine', 'My Anata'],
-    solution: [ 0, 0,1, 0],
+    solution: [ 1, 0, 0, 0],
     answer: [ 0, 0, 0, 0],
     mark: 0,
     score: 0,
@@ -191,6 +191,7 @@ addEventListener('load', function () {
   }
   setNowIndex(1);
   updateInfo();
+  updScore();
 })
 
 function setNowIndex(id) {
@@ -268,4 +269,46 @@ function choose(op){
     item[nowIndex-1].answer[op]=1;
   }
   updateInfo();
+  updScore();
+}
+
+var score=0;
+
+function updScore(){
+  score=0;
+  for(var i=0;i<10;i++){
+    if(item[i].type=="judge"){
+      if(item[i].answer[0]==item[i].solution[0]&&item[i].answer[1]==item[i].solution[1])
+        score++;
+    }else{
+      var fl=1;
+      for(var j=0;j<4;j++){
+        if(item[i].answer[j]!=item[i].solution[j]){
+          fl=0;
+          break;
+        }
+      }
+      score+=fl;
+    }
+  }
+  document.getElementById("score").value=score;
+}
+
+var lastSeconds = 180;
+
+function add0(x){
+  if(x<10)
+    x="0"+x;
+  return x;
+}
+
+setInterval(updTimer, 1000);
+
+function updTimer(){
+  lastSeconds--;
+  if(lastSeconds<=0){
+    alert("Time out!");
+    location.href="./ExamPrepared.html";
+  }
+  document.getElementById("timer").innerHTML=add0(parseInt(lastSeconds/60))+":"+add0(parseInt(lastSeconds%60));
 }

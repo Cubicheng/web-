@@ -5,21 +5,26 @@
 		<title>Cubicheng的主页</title>
         <link rel="stylesheet" href="../../css/main.css">
         <link rel="stylesheet" href="../../css/examPrepared.css">
+        <script type="text/javascript" src="../../js/examPrepare.js"></script>
 	</head>
 	<body>
-        
         <div class="exam-prepare">
             <h1>You have 3 minutes to finish this exam.</h1>
-            <h1>If you are ready, click the button below.</h1>
-            <a href="./ExamMainPage.html" onclick="return confirm('Sure to start?')" class="btn">Start the exam</a>
+            <h1>If you are ready, type your name and click the button below.</h1>
+            <form action="../../AddName.asp" method="post" id="name_form" target="MyIframe">
+                <input type="text" name="name" autofocus="autofocus" id="name" placeholder="type your name">
+                <br>
+                <button onclick="check_input()" type="submit" id="btn">Start the exam</button>
+            </form>
+            <iframe src="" frameborder="0" name="MyIframe" style="display: none;"></iframe>
+            <!-- <a href="#" onclick="check_input()" id="btn">Start the exam</a> -->
         </div>
 
         <header class="header">
-            <a href="../main/MainPage.html" class="logo">Cubicheng.</a>
+            <a href="../../MainPage.html" class="logo">Cubicheng.</a>
             <nav class="navbar">
                 <a href="#" class="active_item" style="--id:1">Exam</a>
-                <a href="#" class="item" style="--id:2">History</a>
-                <a href="#" class="item" style="--id:3">Leaderboard</a>
+                <a href="#" class="item" style="--id:2">Leaderboard</a>
             </nav>
         </header>
 	</body>

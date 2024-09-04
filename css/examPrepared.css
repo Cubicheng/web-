@@ -12,6 +12,28 @@
     opacity: 0;
 }
 
+input {
+    margin: 10px;
+    color: #b7b2a9;
+    background-color: #212121;
+    max-width: 190px;
+    height: 40px;
+    padding: 10px;
+    /* text-align: center; */
+    border: 2px solid #b7b2a9;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+}
+  
+input:focus {
+    color: #b7b2a9;
+    background-color: #212121;
+    outline-color: #b7b2a9;
+    box-shadow: -3px -3px 15px #b7b2a9;
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
 .exam-prepare h1{
     font-size: 30px;
     margin-top: 20px;
@@ -19,20 +41,7 @@
     
 }
 
-.exam-prepare .btn{
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #b7b2a9;
-    margin-top: 20px;
-    text-decoration: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px #b7b2a9;
-    color:black;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.exam-prepare a{
+.exam-prepare button{
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -46,7 +55,21 @@
     transition-timing-function: ease-out;
 }
 
-.exam-prepare a:hover{
+.exam-prepare #btn{
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #b7b2a9;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #b7b2a9;
+    color:black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.exam-prepare button:hover{
+    cursor:pointer;
     box-shadow: 0 0 20px #b7b2a9;
     transform: translateY(-8px);
 }

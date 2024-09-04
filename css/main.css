@@ -149,9 +149,11 @@ body {
     background-image: url('../res/background1.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: auto 100%;
+    background-size: cover;
     background-position: center;
+    min-height: 100vh;
 }
+
 
 /* animation */
 
