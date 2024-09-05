@@ -312,3 +312,7 @@ function updTimer(){
   }
   document.getElementById("timer").innerHTML=add0(parseInt(lastSeconds/60))+":"+add0(parseInt(lastSeconds%60));
 }
+
+function confirmSubmit(){
+  return confirm("Sure to submit?");
+}

@@ -85,7 +85,7 @@
               </li>
             </ul>
           </div>
-        <form action="../../LeaderBoard.asp" method="post">
+        <form action="../../AddScore.asp" method="post" onsubmit="return confirmSubmit()">
             <input type="text" name="score" id="score" hidden/>
             <div id="ctrlBtn">
               <button id="prevItem" type="button" onclick="previous()">previous</button>
@@ -102,7 +102,7 @@
       <a href="../../MainPage.html" class="logo">Cubicheng.</a>
       <nav class="navbar">
         <a href="#" class="active_item" style="--id: 1">Exam</a>
-        <a href="#" class="item" style="--id: 2">Leaderboard</a>
+        <a href="../../LeaderBoard.asp" class="item" style="--id: 2">Leaderboard</a>
       </nav>
     </header>
   </body>

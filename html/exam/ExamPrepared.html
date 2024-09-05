@@ -12,7 +12,7 @@
             <h1>You have 3 minutes to finish this exam.</h1>
             <h1>If you are ready, type your name and click the button below.</h1>
             <form action="../../AddName.asp" method="post" id="name_form" target="MyIframe">
-                <input type="text" name="name" autofocus="autofocus" id="name" placeholder="type your name">
+                <input type="text" name="name" autofocus="autofocus" id="name" placeholder="type your name" maxlength="20">
                 <br>
                 <button onclick="check_input()" type="submit" id="btn">Start the exam</button>
             </form>
@@ -24,7 +24,7 @@
             <a href="../../MainPage.html" class="logo">Cubicheng.</a>
             <nav class="navbar">
                 <a href="#" class="active_item" style="--id:1">Exam</a>
-                <a href="#" class="item" style="--id:2">Leaderboard</a>
+                <a href="../../LeaderBoard.asp" class="item" style="--id:2">Leaderboard</a>
             </nav>
         </header>
 	</body>
