@@ -314,5 +314,9 @@ function updTimer(){
 }
 
 function confirmSubmit(){
-  return confirm("Sure to submit?");
+  var result=confirm("Sure to submit?");
+  if(result==1){
+    alert("Your score is "+score);
+  }
+  return result;
 }

@@ -1,0 +1,57 @@
+Date : 2024-09-07 13:54:08
+Directory : d:\大学\web开发基础\MyPage
+Total : 24 files,  1568 codes, 4 comments, 242 blanks, all 1814 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| CSS        |          8 |        751 |          3 |        118 |        872 |
+| HTML       |         12 |        482 |          1 |         95 |        578 |
+| JavaScript |          4 |        335 |          0 |         29 |        364 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                              | files      | code       | comment    | blank      | total      |
++---------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                 |         24 |      1,568 |          4 |        242 |      1,814 |
+| . (Files)                                         |          4 |        127 |          0 |         21 |        148 |
+| css                                               |          8 |        751 |          3 |        118 |        872 |
+| html                                              |          6 |        335 |          1 |         65 |        401 |
+| html\exam                                         |          2 |        134 |          1 |          6 |        141 |
+| html\main                                         |          4 |        201 |          0 |         59 |        260 |
+| js                                                |          4 |        335 |          0 |         29 |        364 |
+| test                                              |          2 |         20 |          0 |          9 |         29 |
++---------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                          | language   | code       | comment    | blank      | total      |
++---------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\大学\web开发基础\MyPage\AddName.asp                  | HTML       |         15 |          0 |          3 |         18 |
+| d:\大学\web开发基础\MyPage\AddScore.asp                 | HTML       |         19 |          0 |          1 |         20 |
+| d:\大学\web开发基础\MyPage\LeaderBoard.asp              | HTML       |         50 |          0 |         10 |         60 |
+| d:\大学\web开发基础\MyPage\MainPage.html                | HTML       |         43 |          0 |          7 |         50 |
+| d:\大学\web开发基础\MyPage\css\examMain.css             | CSS        |        172 |          0 |         24 |        196 |
+| d:\大学\web开发基础\MyPage\css\examPrepared.css         | CSS        |         73 |          2 |         11 |         86 |
+| d:\大学\web开发基础\MyPage\css\leaderboard.css          | CSS        |         33 |          0 |          3 |         36 |
+| d:\大学\web开发基础\MyPage\css\main.css                 | CSS        |        201 |          1 |         37 |        239 |
+| d:\大学\web开发基础\MyPage\css\moods.css                | CSS        |         50 |          0 |         10 |         60 |
+| d:\大学\web开发基础\MyPage\css\movies.css               | CSS        |         74 |          0 |         11 |         85 |
+| d:\大学\web开发基础\MyPage\css\neighbors.css            | CSS        |         74 |          0 |         11 |         85 |
+| d:\大学\web开发基础\MyPage\css\sports.css               | CSS        |         74 |          0 |         11 |         85 |
+| d:\大学\web开发基础\MyPage\html\exam\ExamMainPage.html  | HTML       |        105 |          0 |          5 |        110 |
+| d:\大学\web开发基础\MyPage\html\exam\ExamPrepared.html  | HTML       |         29 |          1 |          1 |         31 |
+| d:\大学\web开发基础\MyPage\html\main\MoodsPage.html     | HTML       |         30 |          0 |          4 |         34 |
+| d:\大学\web开发基础\MyPage\html\main\MoviesPage.html    | HTML       |         63 |          0 |         17 |         80 |
+| d:\大学\web开发基础\MyPage\html\main\NeighborsPage.html | HTML       |         57 |          0 |         20 |         77 |
+| d:\大学\web开发基础\MyPage\html\main\SportsPage.html    | HTML       |         51 |          0 |         18 |         69 |
+| d:\大学\web开发基础\MyPage\js\AddScore.js               | JavaScript |          3 |          0 |          0 |          3 |
+| d:\大学\web开发基础\MyPage\js\examMainJs.js             | JavaScript |        293 |          0 |         25 |        318 |
+| d:\大学\web开发基础\MyPage\js\examPrepare.js            | JavaScript |         10 |          0 |          0 |         10 |
+| d:\大学\web开发基础\MyPage\js\mainjs.js                 | JavaScript |         29 |          0 |          4 |         33 |
+| d:\大学\web开发基础\MyPage\test\1.asp                   | HTML       |          7 |          0 |          3 |         10 |
+| d:\大学\web开发基础\MyPage\test\1.html                  | HTML       |         13 |          0 |          6 |         19 |
+| Total                                             |            |      1,568 |          4 |        242 |      1,814 |
++---------------------------------------------------+------------+------------+------------+------------+------------+
